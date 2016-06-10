@@ -15,11 +15,18 @@ Use this method if you want to keep up to date with changes.
 git clone https://github.com/C4Framework/C4XcodeColorTheme
 cd C4XcodeColorTheme
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-ln -s C4.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/C4.dvtcolortheme
+cp C4.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 ```
 
 After executing these commands restart Xcode, go to preferences and select the C4 theme.
 
+To update to the latest version:
+
+```shell
+cd C4XcodeColorTheme
+git pull
+cp C4.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes
+```
 
 ### Manually
 
